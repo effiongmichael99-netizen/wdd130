@@ -182,15 +182,15 @@ header nav a {
 /* Small image inside article */
 
 .hero article img {
-    position: absolute;
-
-    right: 15px;
-    top: 15px;
+    float: right;
 
     width: 140px;
     height: 95px;
 
     object-fit: cover;
+
+    margin-left: 15px;
+    margin-bottom: 10px;
 }
 
 /* ---------------------------------------------------------
