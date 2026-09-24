@@ -46,18 +46,29 @@ body {
    ========================= */
 
 header {
-    width: 100%;
-    max-width: 1115px;
-    height: 120px;
+    display: block;
+    padding: 10px 15px;
+}
 
-    margin: 0 auto;
-    padding: 5px 30px;
+header > img {
+    width: 120px;
+    height: auto;
+    display: block;
+}
 
+header nav {
     display: flex;
-    align-items: center;
-    justify-content: space-between;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0;
+}
 
-    background-color: white;
+header nav a {
+    display: block;
+    color: #1c3b70;
+    text-decoration: none;
+    font-size: 16px;
+    line-height: 1.4;
 }
 
 /* LOGO */
@@ -72,31 +83,17 @@ header > img {
 
 /* NAVIGATION */
 header nav {
-    display: flex !important;
-    flex-direction: row !important;
-
-    align-items: center;
-    justify-content: flex-end;
-
-    gap: 35px;
-
-    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+    align-items: flex-start;
 }
 
 header nav a {
-    display: inline-block;
-
-    color: #1c3b70;
-
     text-decoration: none;
-
+    color: #1c3b70;
     font-family: Arial, Helvetica, sans-serif;
-
     font-size: 16px;
-}
-
-header nav a:hover {
-    text-decoration: underline;
 }
 
 /* ---------------------------------------------------------
