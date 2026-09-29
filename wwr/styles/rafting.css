@@ -1,11 +1,6 @@
-/* =========================================================
-   RAPIDS! WHITE WATER RAFTING
-   ABOUT US PAGE
-   ========================================================= */
-
-/* ---------------------------------------------------------
-   CSS VARIABLES
-   --------------------------------------------------------- */
+/* ==============================
+   COLOR VARIABLES
+   ============================== */
 
 :root {
     --primary-color: #1c3b70;
@@ -17,376 +12,307 @@
     --body-font: Arial, Helvetica, sans-serif;
 }
 
-/* ---------------------------------------------------------
-   UNIVERSAL RESET
-   --------------------------------------------------------- */
+/* ==============================
+   GENERAL PAGE STYLING
+   ============================== */
 
 * {
-    margin: 0;
-    padding: 0;
     box-sizing: border-box;
 }
 
-/* ---------------------------------------------------------
-   BODY
-   --------------------------------------------------------- */
-
 body {
+    margin: 0;
     font-family: var(--body-font);
     color: var(--accent-color);
-
-    max-width: 1115px;
-    margin: 0 auto;
-
-    background-color: white;
+    background-color: var(--white-color);
+    line-height: 1.5;
 }
 
-/* =========================
+h1,
+h2 {
+    font-family: var(--heading-font);
+    color: var(--primary-color);
+}
+
+h1,
+h2,
+p {
+    margin-top: 0;
+}
+
+/* ==============================
    HEADER
-   ========================= */
+   ============================== */
 
 header {
-    display: block;
-    padding: 10px 15px;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 15px 30px;
+
+    display: grid;
+    grid-template-columns: 180px 1fr;
+    align-items: center;
+
+    background-color: var(--white-color);
 }
 
 header > img {
-    width: 120px;
+    width: 150px;
     height: auto;
-    display: block;
 }
 
-header nav {
+/* ==============================
+   NAVIGATION
+   ============================== */
+
+nav {
     display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 0;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 10px;
 }
 
-header nav a {
+nav a {
     display: block;
-    color: #1c3b70;
+    padding: 10px 18px;
+
+    color: var(--white-color);
+    background-color: var(--primary-color);
+
     text-decoration: none;
-    font-size: 16px;
-    line-height: 1.4;
+    font-weight: bold;
+    border-radius: 4px;
 }
 
-/* LOGO */
-header > img {
-    width: 85px !important;
-    height: 85px !important;
-
-    object-fit: contain;
-
-    display: block;
+nav a:hover {
+    background-color: var(--secondary-color);
 }
 
-/* NAVIGATION */
-header nav {
-    display: flex;
-    flex-direction: column;
-    gap: 0;
-    align-items: flex-start;
+/* ==============================
+   MAIN CONTENT
+   ============================== */
+
+main {
+    max-width: 1000px;
+    margin: 0 auto;
 }
 
-header nav a {
-    text-decoration: none;
-    color: var(--secondary-color);
-    font-family: var(--body-font);
-    font-size: 16px;
-}
-
-/* ---------------------------------------------------------
+/* ==============================
    HERO
-   --------------------------------------------------------- */
+   ============================== */
 
 .hero {
     position: relative;
-
-    width: 100%;
-
-    overflow: hidden;
+    margin-bottom: 30px;
 }
-
-/* Hero background image */
 
 .hero > img {
     display: block;
-
     width: 100%;
-
-    height: auto;
-
-    min-height: 700px;
-
+    height: 350px;
     object-fit: cover;
 }
-
-/* ---------------------------------------------------------
-   HERO TITLE
-   --------------------------------------------------------- */
 
 .hero h1 {
     position: absolute;
 
-    top: 45px;
+    top: 25px;
     left: 0;
+    right: 0;
 
-    width: 100%;
-
-    padding: 10px;
+    margin: 0;
+    padding: 15px;
 
     text-align: center;
 
     color: var(--white-color);
-
-    background-color: rgba(28, 59, 112, 0.88);
-
-    font-family: var(--heading-font);
-
-    font-size: 2.4rem;
-
-    font-weight: bold;
+    background-color: rgba(28, 59, 112, 0.85);
 }
-
-/* ---------------------------------------------------------
-   HERO ARTICLE
-   --------------------------------------------------------- */
 
 .hero article {
     position: absolute;
 
-    bottom: 45px;
-    left: 28px;
-    right: 28px;
+    bottom: 25px;
+    left: 5%;
+    right: 5%;
 
-    min-height: 125px;
+    padding: 20px;
 
-    padding: 18px;
+    background-color: rgba(255, 255, 255, 0.9);
 
-    background-color: rgba(28, 59, 112, 0.88);
-
-    color: white;
+    overflow: auto;
 }
-
-/* Article paragraph */
-
-.hero article p {
-    font-size: 1rem;
-
-    line-height: 1.35;
-
-    padding-right: 165px;
-}
-
-/* Small image inside article */
 
 .hero article img {
     float: right;
-
-    width: 140px;
-    height: 95px;
-
+    width: 180px;
+    height: 120px;
     object-fit: cover;
-
-    margin-left: 15px;
+    margin-left: 20px;
     margin-bottom: 10px;
 }
 
-/* ---------------------------------------------------------
+/* ==============================
    SECTIONS
-   --------------------------------------------------------- */
+   ============================== */
 
 section {
-    margin-top: 32px;
+    margin: 30px 0;
+    padding: 25px;
 
-    padding-bottom: 10px;
+    border: 1px solid #cccccc;
+    background-color: #f7f7f7;
 }
-
-/* Section headings */
 
 section h2 {
-    width: 100%;
-
-    padding: 12px;
-
-    margin-bottom: 15px;
-
-    background-color: var(--primary-color);
-
-    color: var(--white-color);
-
     text-align: center;
+    margin-bottom: 25px;
 
-    font-family: var(--heading-font);
-
-    font-size: 1.5rem;
+    color: var(--primary-color);
 }
 
-/* Section paragraphs */
+/* ==============================
+   HISTORY
+   ============================== */
 
-section p {
-    padding: 0 15px;
-
-    line-height: 1.3;
-
-    font-size: 1rem;
-}
-
-/* ---------------------------------------------------------
-   ADVENTURE SECTION
-   --------------------------------------------------------- */
-
-section:last-of-type {
-    min-height: 90px;
-
-    margin-bottom: 20px;
-}
-
-/* ---------------------------------------------------------
-   FOOTER
-   --------------------------------------------------------- */
-
-footer {
-    border-top: 1px solid #cccccc;
-
-    margin-top: 25px;
-
-    padding: 12px 15px;
-
-    min-height: 75px;
-
-    display: flex;
-
+.history-content {
+    display: grid;
+    grid-template-columns: 1fr 250px 1fr;
     align-items: center;
+    gap: 25px;
+}
 
+.history-content p {
+    margin: 0;
+}
+
+.history-content img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+}
+
+/* ==============================
+   ADVENTURES
+   ============================== */
+
+.adventures {
+    display: flex;
     justify-content: space-between;
-}
-
-/* Copyright */
-
-footer p {
-    font-size: 1rem;
-}
-
-/* ---------------------------------------------------------
-   SOCIAL MEDIA
-   --------------------------------------------------------- */
-
-.socialmedia {
-    display: flex;
-
-    align-items: center;
-
+    align-items: flex-start;
     gap: 15px;
 }
 
-/* Remove underline from social links */
-
-.socialmedia a {
-    text-decoration: none;
+.adventures figure {
+    width: 20%;
+    margin: 0;
+    text-align: center;
 }
 
-/* Social media images */
+.adventures img {
+    display: block;
 
-.socialmedia img {
-    width: 45px;
-    height: 45px;
+    width: 100%;
+    height: 120px;
 
-    object-fit: contain;
+    object-fit: cover;
 
+    border: 2px solid var(--primary-color);
+}
+
+.adventures figcaption {
+    padding-top: 8px;
+
+    font-size: 0.9rem;
+    font-weight: bold;
+
+    color: var(--primary-color);
+}
+
+/* ==============================
+   FOOTER
+   ============================== */
+
+footer {
+    max-width: 1000px;
+    margin: 30px auto 0;
+
+    padding: 20px 30px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    background-color: var(--primary-color);
+    color: var(--white-color);
+}
+
+footer p {
+    margin: 0;
+}
+
+.socialmedia {
+    display: flex;
+    gap: 12px;
+    align-items: center;
+}
+
+.socialmedia a {
     display: block;
 }
 
-/* ---------------------------------------------------------
-   RESPONSIVE DESIGN
-   --------------------------------------------------------- */
+.socialmedia img {
+    width: 35px;
+    height: 35px;
+    object-fit: contain;
+}
 
-@media (max-width: 800px) {
+/* ==============================
+   RESPONSIVE DESIGN
+   ============================== */
+
+@media screen and (max-width: 700px) {
 
     header {
-        flex-direction: column;
-
+        grid-template-columns: 1fr;
+        justify-items: center;
         gap: 15px;
     }
 
-    header nav {
-        gap: 20px;
-
+    nav {
+        justify-content: center;
         flex-wrap: wrap;
+    }
 
+    .hero > img {
+        height: 300px;
+    }
+
+    .hero article {
+        position: static;
+        margin-top: 0;
+    }
+
+    .history-content {
+        grid-template-columns: 1fr;
+    }
+
+    .history-content img {
+        width: 100%;
+    }
+
+    .adventures {
+        flex-wrap: wrap;
         justify-content: center;
     }
 
-    .hero > img {
-        min-height: 500px;
-    }
-
-    .hero h1 {
-        font-size: 1.8rem;
-    }
-
-    .hero article {
-        bottom: 20px;
-        left: 15px;
-        right: 15px;
-    }
-
-    .hero article p {
-        padding-right: 120px;
-
-        font-size: 0.9rem;
-    }
-
-    .hero article img {
-        width: 100px;
-        height: 75px;
-    }
-}
-
-@media (max-width: 550px) {
-
-    header nav {
-        flex-direction: column;
-
-        gap: 8px;
-    }
-
-    .hero > img {
-        min-height: 450px;
-    }
-
-    .hero h1 {
-        position: static;
-
-        font-size: 1.5rem;
-    }
-
-    .hero article {
-        position: static;
-
-        min-height: auto;
-    }
-
-    .hero article p {
-        padding-right: 0;
-
-        margin-bottom: 15px;
-    }
-
-    .hero article img {
-        position: static;
-
-        width: 100%;
-
-        height: auto;
+    .adventures figure {
+        width: 45%;
     }
 
     footer {
         flex-direction: column;
-
         gap: 15px;
-
         text-align: center;
     }
 }
