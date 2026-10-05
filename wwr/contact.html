@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <meta name="description"
-      content="Contact Rapids! White Water Rafting to learn more about our rafting adventures.">
+      content="Contact Rapids! White Water Rafting for reservations, questions, and more information about our rafting adventures.">
 
     <meta name="author" content="Michael Effiong">
 
@@ -20,8 +20,10 @@
 
     <header>
 
+        <!-- Company Logo -->
         <img src="images/blue_logo.jpg" alt="Rapids! White Water Rafting logo">
 
+        <!-- Navigation -->
         <nav>
             <a href="index.html">Home</a>
             <a href="about.html">About Us</a>
@@ -33,101 +35,184 @@
 
     <main>
 
-        <div class="hero">
-
-            <img src="images/rafting_hero.jpg" alt="White water rafting">
+        <!-- PAGE HEADING -->
+        <section class="contact-intro">
 
             <h1>Contact Us</h1>
 
-            <article>
+            <p>
+                We would love to hear from you! Contact Rapids! White Water
+                Rafting for reservations, questions, or more information
+                about our exciting rafting adventures.
+            </p>
 
-                <img src="images/rafting19_600.jpg" alt="Rafting adventure">
+        </section>
 
-                <p>
-                    Have questions about our rafting trips?
-                    Contact us and our team will be happy to help.
-                </p>
+        <!-- COMPANY INFORMATION AND MAP -->
+        <section class="contact-information">
 
-            </article>
+            <h2>White Water Rafting Company</h2>
 
-        </div>
+            <div class="contact-details">
 
-        <section>
+                <div class="company-info">
 
-            <h2>Get In Touch</h2>
+                    <h3>Our Location</h3>
 
-            <div class="history-content">
+                    <p>
+                        12 nwaniba Street<br>
+                        Uyo, Akwa Ibom State<br>
+                        Nigeria
+                    </p>
 
-                <p>
-                    We would love to hear from you. Contact us to ask
-                    questions, learn more about our trips, or make plans
-                    for your next rafting adventure.
-                </p>
+                    <p>
+                        <strong>Phone:</strong>
+                        +234 803 123 4567
+                    </p>
 
-                <img src="images/rafting4_600.jpg" alt="Rafting adventure">
+                    <p>
+                        <strong>Email:</strong>
+                        info@rapidsrafting.com
+                    </p>
 
-                <p>
-                    You can contact our team by phone, email, or by
-                    visiting our rafting office.
-                </p>
+                </div>
+
+                <!-- Google Map -->
+                <div class="map">
+
+                    <iframe src="https://www.google.com/maps?q=Uyo,+Akwa+Ibom,+Nigeria&output=embed"
+                      width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy"
+                      referrerpolicy="no-referrer-when-downgrade"
+                      title="Map showing the location of Rapids White Water Rafting">
+                    </iframe>
+
+                </div>
 
             </div>
 
         </section>
 
-        <section>
+        <!-- EMPLOYEE PROFILES -->
+        <section class="employee-section">
 
-            <h2>Contact Information</h2>
+            <h2>Meet Our Guides</h2>
 
-            <div class="contact-info">
+            <div class="employee-profiles">
 
-                <p>
-                    <strong>Phone:</strong>
-                    +234 706 594 6486
-                </p>
+                <figure>
+                    <img src="images/mike.jpg" alt="Portrait of our rafting guide">
+                    <figcaption>mike - Senior Rafting Guide</figcaption>
+                </figure>
 
-                <p>
-                    <strong>Email:</strong>
-                    info@rapidsrafting.com
-                </p>
+                <figure>
+                    <img src="images/profile.jpg" alt="Portrait of our rafting guide">
+                    <figcaption>David - Adventure Guide</figcaption>
+                </figure>
 
-                <p>
-                    <strong>Address:</strong>
-                    Rapids! White Water Rafting Center Uyo
-                </p>
-
-                <p>
-                    <strong>Hours:</strong>
-                    Monday - Saturday, 8:00 AM - 5:00 PM
-                </p>
+                <figure>
+                    <img src="images/grace.jpg" alt="Portrait of our rafting guide">
+                    <figcaption>Grace - Customer Experience Manager</figcaption>
+                </figure>
 
             </div>
+
+        </section>
+
+        <!-- CONTACT FORM -->
+        <section class="contact-form-section">
+
+            <h2>Send Us a Message</h2>
+
+            <form>
+
+                <!-- Name -->
+                <div class="form-item">
+                    <label for="name">Your Name:</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+
+                <!-- Email -->
+                <div class="form-item">
+                    <label for="email">Your Email:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+
+                <!-- Purpose -->
+                <fieldset>
+
+                    <legend>What is the purpose of your message?</legend>
+
+                    <label>
+                        <input type="radio" name="purpose" value="general-inquiry" required>
+                        General Inquiry
+                    </label>
+
+                    <label>
+                        <input type="radio" name="purpose" value="reservation-question">
+                        Reservation Question
+                    </label>
+
+                    <label>
+                        <input type="radio" name="purpose" value="website-suggestion">
+                        Website Suggestion
+                    </label>
+
+                </fieldset>
+
+                <!-- Message -->
+                <div class="form-item">
+
+                    <label for="message">Your Message:</label>
+
+                    <textarea id="message" name="message" rows="6"
+                      placeholder="Type your message here..." required></textarea>
+
+                </div>
+
+                <!-- Newsletter -->
+                <div class="form-item checkbox">
+
+                    <label for="newsletter">
+
+                        <input type="checkbox" id="newsletter" name="newsletter">
+
+                        Please subscribe me to the monthly newsletter.
+
+                    </label>
+
+                </div>
+
+                <!-- Submit -->
+                <button type="submit">Send Message</button>
+
+            </form>
 
         </section>
 
     </main>
 
+    <!-- FOOTER -->
     <footer>
 
         <p>
-            © 2026 Rapids! White Water Rafting | Michael Effiong
+            &copy; 2026 | Rapids! | Michael Effiong
         </p>
 
-        <div class="socialmedia">
+        <nav class="socialmedia">
 
-            <a href="https://facebook.com" target="_blank">
+            <a href="https://www.facebook.com/">
                 <img src="images/facebook-square.svg" alt="Facebook">
             </a>
 
-            <a href="https://instagram.com" target="_blank">
-                <img src="images/instagram-square.svg" alt="Instagram">
-            </a>
-
-            <a href="https://linkedin.com" target="_blank">
+            <a href="https://www.linkedin.com/">
                 <img src="images/linkedin.png.svg" alt="LinkedIn">
             </a>
 
-        </div>
+            <a href="https://www.instagram.com/">
+                <img src="images/instagram-square.svg" alt="Instagram">
+            </a>
+
+        </nav>
 
     </footer>
 
